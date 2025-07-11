@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Autovix replaces cold callers with lovable AI voice agents that qualify leads, follow up instantly, and book more meetings 24/7." />
+  <meta name="keywords" content="AI Voice Agent, Conversational AI Sales, Automated Cold Calling, Autovix" />
+  <meta name="author" content="Autovix" />
+  <title>Autovix — Voice Agents That Book Calls While You Sleep</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Space Grotesk', sans-serif !important;
+      color: white;
+      background: #0a0a0a;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, #0a0a0a 0%, #1c1a1a 30%, #2e2218 60%, #4d2f11 80%, #ff7a00 100%);
+      z-index: -3;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      opacity: 0.15;
+      background-image:
+        linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.08) 50%, transparent 60%),
+        linear-gradient(-45deg, transparent 40%, rgba(255,255,255,0.08) 50%, transparent 60%);
+      background-size: 60px 60px;
+    }
+
+    .pattern-grid::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.08;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px);
+      background-size: 30px 30px;
+      pointer-events: none;
+    }
+
+    .glow-button {
+      background: linear-gradient(90deg, #ff7a00, #ffae42);
+      color: #000;
+      box-shadow: 0 0 20px #ff7a00;
+      transition: all 0.3s ease;
+    }
+    .glow-button:hover {
+      box-shadow: 0 0 30px #ff7a00, 0 0 40px #ffae42 inset;
+      transform: scale(1.05);
+    }
+    .video-glow::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle, rgba(255,122,0,0.15), transparent);
+      z-index: -1;
+      border-radius: 1rem;
+      animation: pulse-glow 3s infinite;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="pattern-grid">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 sticky top-0 bg-black/70 backdrop-blur-md z-50">
+    <h1 class="text-2xl font-bold text-orange-400">Autovix</h1>
+    <a href="#cta" class="glow-button px-5 py-2 rounded-full text-sm">Book a Call</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-28 px-6">
+    <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+      AI That Talks Business<br>
+      <span class="text-orange-400">So You Don’t Have To.</span>
+    </h2>
+    <p class="mt-6 text-gray-300 max-w-2xl mx-auto text-lg">
+      Autovix builds voice agents that sound human, think smart, and convert faster than your best SDR. Book qualified meetings without lifting a finger — 24/7.
+    </p>
+    <a href="#cta" class="glow-button mt-10 inline-block px-6 py-3 rounded-full font-semibold text-lg">Talk to Our Team</a>
+  </section>
+
+  <!-- Demo Video Section -->
+  <section class="py-16 px-6 text-center">
+    <a href="#">
+      <div class="w-full max-w-4xl aspect-video mx-auto relative rounded-2xl overflow-hidden video-glow border-2 border-orange-400 shadow-xl">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <svg class="h-16 w-16 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+      </div>
+    </a>
+    <p class="mt-6 text-gray-400 text-base">See How It Works in Real Conversations</p>
+  </section>
+
+  <!-- CTA Final Section -->
+  <section id="cta" class="bg-black py-24 px-6 text-center">
+    <h3 class="text-4xl font-bold mb-6">Let's Replace Your Cold Calls with Conversations That Convert</h3>
+    <p class="text-gray-300 max-w-xl mx-auto mb-10 text-lg">
+      Let Autovix qualify, follow up, and book meetings — all without hiring another rep.
+    </p>
+    <a href="#" class="glow-button px-6 py-3 rounded-full font-semibold text-lg">Book a Free Setup Call</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-sm text-gray-600">© 2025 Autovix. All rights reserved.</footer>
+</body>
+</html>
